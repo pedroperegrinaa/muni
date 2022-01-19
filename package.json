@@ -4,13 +4,16 @@
     "description": "Hello world",
     "main": "main.js",
     "scripts": {
-        "start": "electron .",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "electron ."
     },
     "keywords": [],
     "author": "pedroperegrinaa",
     "license": "ISC",
     "dependencies": {
-        "electron": "^16.0.7"
+        "electron": "^16.0.7",
+        "electron-reload": "^2.0.0-alpha.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
     }
 }
