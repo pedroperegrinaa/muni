@@ -1,21 +1,26 @@
 body {
     background-color: black;
     color: aliceblue;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
 }
 
-.text {
+.container {
     background-color: #000000;
     color: aliceblue;
     border-color: none;
-    resize: none;
-    width: 100%;
+    /* resize: none; */
+    /* width: 100%; */
     height: 100%;
     outline: 0;
+    outline: 0px solid transparent;
 }
 
-.text:focus,
-input:focus {
-    box-shadow: 0 0 0 0;
-    outline: 0;
+.resultados {
+    background-color: aqua;
+    /* height: 10px; */
+}
+
+#content {
+    outline: 0px solid transparent;
 }
