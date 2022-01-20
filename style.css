@@ -1,26 +1,63 @@
 body {
-    background-color: #111111;
+    background-color: #27282D;
     color: aliceblue;
     font-family: 'Droid Sans Mono';
     font-size: large;
+    margin: 0px;
 }
 
 .container {
-    color: aliceblue;
+    color: #E1E1DF;
     display: flex;
+    padding-top: 20px;
 }
 
 #inseridos {
-    background-color: #222222;
+    /* background-color: #222222; */
     outline: 0px solid transparent;
     flex: 0 0 65%;
-    padding: 10px 0 10px 5%;
+    margin: 10px 0 10px 5%;
     word-wrap: break-word;
 }
 
 #resultados {
-    background-color: #444444;
+    /* background-color: #444444; */
     flex: 0 0 25%;
     text-align: end;
-    padding: 10px 5% 10px 0;
+    margin: 10px 5% 10px 0;
+    color: #8DD32D;
 }
+
+#resultados:hover {
+    background-color: #8DD32D;
+    /* padding: 10px 10px 10px 10px; */
+    color: #27282D;
+    border-radius: 30px;
+    flex-wrap: wrap;
+}
+
+
+/* ******************************** */
+
+#title-bar {
+    -webkit-app-region: drag;
+    height: 30px;
+    /* background-color: #111; */
+    color: #777777;
+    padding: none;
+    margin: none;
+}
+
+#title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 4px;
+}
+
+
+/* #title-bar-btns {
+    -webkit-app-region: no-drag;
+    position: fixed;
+    top: 0px;
+    right: 6px;
+} */

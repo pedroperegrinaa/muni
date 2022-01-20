@@ -11,11 +11,21 @@ const createWindow = () => {
     const win = new BrowserWindow({
         width: 600,
         height: 600,
-        // frame: false
-        titleBarStyle: 'customButtonsOnHover'
+        frame: false,
+        // titleBarStyle: 'hidden',
+        // titleBarOverlay: {
+        //     color: '#2f3241',
+        //     symbolColor: '#8DD32D'
+        // },
+        // transparent: true,
+        // backgroundColor: '#FFF',
+        // webPreferences: {
+        //     nodeIntegration: true
+        // }
     })
 
-    win.loadFile('index.html')
+    win.loadFile('index.html');
+    win.setWindowButtonVisibility(true);
 }
 
 app.whenReady().then(() => {
