@@ -1,26 +1,26 @@
 body {
-    background-color: black;
+    background-color: #111111;
     color: aliceblue;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Droid Sans Mono';
     font-size: large;
 }
 
 .container {
-    background-color: #000000;
     color: aliceblue;
-    border-color: none;
-    /* resize: none; */
-    /* width: 100%; */
-    height: 100%;
-    outline: 0;
-    outline: 0px solid transparent;
+    display: flex;
 }
 
-.resultados {
-    background-color: aqua;
-    /* height: 10px; */
+#inseridos {
+    background-color: #222222;
+    outline: 0px solid transparent;
+    flex: 0 0 65%;
+    padding: 10px 0 10px 5%;
+    word-wrap: break-word;
 }
 
-#content {
-    outline: 0px solid transparent;
+#resultados {
+    background-color: #444444;
+    flex: 0 0 25%;
+    text-align: end;
+    padding: 10px 5% 10px 0;
 }

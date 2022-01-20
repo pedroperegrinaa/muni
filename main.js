@@ -9,7 +9,7 @@ require('electron-reload')(__dirname, {
 
 const createWindow = () => {
     const win = new BrowserWindow({
-        width: 800,
+        width: 600,
         height: 600,
         // frame: false
         titleBarStyle: 'customButtonsOnHover'
