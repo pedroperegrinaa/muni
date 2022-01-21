@@ -40,35 +40,48 @@ body {
 }
 
 
-/* ******************************** */
+/* *************************** */
 
-#title-bar {
-    -webkit-app-region: drag;
-    height: 30px;
-    background-color: #111;
-    color: #eee;
-    padding: none;
-    margin: none;
-}
-
-#title {
+header {
+    display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    -webkit-app-region: drag;
+}
+
+.title {
+    color: #aaa;
     text-align: center;
-    padding: 4px;
+    flex: auto;
+    margin-top: 10px;
+    padding-left: 12%;
 }
 
-#title-bar-btns {
+.window-buttons {
     -webkit-app-region: no-drag;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    width: 130px;
-    height: 30px;
-    background-color: #8DD32D;
+    flex: 0 0 130px;
+    display: flex;
+    flex-direction: row-reverse;
+    /* background-color: #8DD32D; */
 }
 
-.window-button {
-    border-color: #27282D;
-    background-color: #27282D;
-    color: #E1E1DF;
+.option {
+    /* background-color: #8DD32D; */
+    padding: 0px 15px 0px 15px;
+    color: #eee;
+    padding-top: 15px;
+    margin-top: -10px;
+    margin-bottom: -5px;
+}
+
+#win-min {
+    border-radius: 0 0 0 3px;
+}
+
+.option:hover {
+    background-color: #444;
+}
+
+#win-close:hover {
+    background-color: rgb(118, 40, 40);
 }

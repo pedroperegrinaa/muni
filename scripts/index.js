@@ -9,9 +9,6 @@ document.onkeyup = function(e) {
     console.log(aInseridos);
     console.log(eval(aInseridos));
 
-
-
-
     if (eval(aInseridos) === undefined) {
         console.log('aaa');
         resultados.innerHTML = ''
