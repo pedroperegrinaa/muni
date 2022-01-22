@@ -12,24 +12,33 @@ const createWindow = () => {
         width: 600,
         height: 600,
         frame: false,
-        // titleBarStyle: 'hidden',
-        // titleBarOverlay: {
-        //     color: '#2f3241',
-        //     symbolColor: '#8DD32D'
-        // },
-        // transparent: true,
-        // backgroundColor: '#FFF',
-        // webPreferences: {
-        //     nodeIntegration: true
-        // }
+        webPreferences: {
+            nodeIntegration: false, // is default value after Electron v5
+            contextIsolation: true, // protect against prototype pollution
+            enableRemoteModule: false, // turn off remote
+            preload: path.join(__dirname, "preload.js") // use a preload script
+        },
         minWidth: 500,
         minHeight: 300
     })
 
     win.loadFile('index.html');
-    win.setWindowButtonVisibility(true);
+    win.webContents.openDevTools();
+
 }
 
 app.whenReady().then(() => {
     createWindow()
+})
+
+app.on('window-all-closed', () => {
+    if (process.platform !== 'darwin') {
+        app.quit();
+    }
+})
+
+app.on('activate', () => {
+    if (BrowserWindow.getAllWindows().length === 0) {
+        createWindow()
+    }
 })

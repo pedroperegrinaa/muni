@@ -9,24 +9,21 @@
     <title>Document</title>
 </head>
 
+<!-- <script>
+    window.api.receive("fromMain", (data) => {
+        console.log(`Received ${data} from main process`);
+    });
+    window.api.send("toMain", "some data");
+</script> -->
 
-
-<!-- <header id="title-bar">
-    <div id="title">Muni</div>
-    <div id="title-bar-btns">
-        <button class="window-button" id="min-btn">-</button>
-        <button class="window-button" id="max-btn">+</button>
-        <button class="window-button" id="close-btn">x</button>
-    </div>
-</header> -->
 
 <div id="content">
     <header>
         <div class="title">Muni</div>
         <div class="window-buttons">
-            <div class="option" id="win-close">x</div>
-            <div class="option">□</div>
-            <div class="option" id="win-min">─</div>
+            <div class="option" id="close-btn">x</div>
+            <div class="option" id="max-btn">□</div>
+            <div class="option" id="min-btn">─</div>
         </div>
     </header>
 
@@ -37,13 +34,8 @@
             <div id="resultados" contenteditable="false">
             </div>
         </div>
-        <!-- <svg>
-            <rect width="10" height="100"  fill="red" x="10" y="30" stroke="green" stroke-width="5" ></rect>
-       </svg> -->
-        <script src="scripts/index.js"></script>
+        <script src="scripts/renderer.js"></script>
     </body>
 </div>
-
-
 
 </html>
